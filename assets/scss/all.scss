@@ -29,6 +29,10 @@ body {
   color: var(--light);
 }
 
+.text-gray {
+  color: #707070;
+}
+
 .bg-primary {
   background-color: var(--primary);
 }
@@ -39,6 +43,10 @@ body {
 
 .bg-third {
   background-color: var(--skin);
+}
+
+.bg-light {
+  background-color: var(--light);
 }
 
 .container {
@@ -63,6 +71,22 @@ body {
 
 .w-33 {
   width: 33%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+.mb-6 {
+  margin-bottom: 48px;
 }
 
 @import "./layout/header.scss";
