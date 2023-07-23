@@ -1,0 +1,35 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  width: 80px;
+}
+
+.menu-item a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 80px;
+  height: 50px;
+  display: block;
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true")
+    no-repeat center / 50% 50%;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu .menu-item:not(:last-child) {
+  margin-right: 64px;
+}
