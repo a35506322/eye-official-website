@@ -2,6 +2,10 @@
   background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true")
     no-repeat center / cover;
   height: 787px;
+  @media screen and (max-width: 992px) {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true")
+      no-repeat center / cover;
+  }
 }
 
 .home-header-content {
@@ -30,7 +34,8 @@
 }
 
 .content-container {
-  padding: 80px 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,6 +61,9 @@
 .detail-container {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 992px) {
+    flex-wrap: wrap;
+  }
 }
 
 .detail-card {
@@ -77,28 +85,65 @@
   font: italic normal 900 48px/72px Roboto;
 }
 
+.detail-container2 {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 992px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.detail-card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-card2:not(:last-child) {
+  margin-right: 24px;
+  @media screen and (max-width: 992px) {
+    margin-right: 0px;
+  }
+}
+
+.detail-card2.w-33 h5 {
+  font: italic normal 900 48px/72px Roboto;
+}
+
 .index-bg {
   background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true")
     no-repeat center / cover;
   height: 608px;
+
+  @media screen and (max-width: 992px) {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true")
+      no-repeat center / cover;
+    height: 960px;
+  }
 }
 
 .detail-container3 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.detail-card3 {
-}
-
-.d-block {
-  display: block;
+  @media screen and (max-width: 992px) {
+    flex-wrap: wrap;
+  }
 }
 
 .detail-card3 h5 {
   text-align: center;
   font: italic normal 900 48px/72px Roboto;
+}
+
+.detail-container4 {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 992px) {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 
 .detail-card4 {
@@ -109,6 +154,9 @@
 
 .detail-card4:not(:last-child) {
   margin-right: 24px;
+  @media screen and (max-width: 992px) {
+    margin-right: 0px;
+  }
 }
 
 .detail-card4-content {

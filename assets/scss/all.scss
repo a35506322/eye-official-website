@@ -51,6 +51,7 @@ body {
 
 .container {
   max-width: 1296px;
+  padding: 0px 32px;
 }
 
 .m-auto {
@@ -73,6 +74,12 @@ body {
   width: 25%;
 }
 
+.w-lg-45 {
+  @media screen and (max-width: 992px) {
+    width: 45%;
+  }
+}
+
 .w-33 {
   width: 33%;
 }
@@ -89,6 +96,12 @@ body {
   margin-bottom: 24px;
 }
 
+.mb-lg-3 {
+  @media screen and (max-width: 992px) {
+    margin-bottom: 24px;
+  }
+}
+
 .mb-6 {
   margin-bottom: 48px;
 }
@@ -97,8 +110,20 @@ body {
   margin-top: 16px;
 }
 
-.w-100 {
-  width: 100%;
+.w-50 {
+  width: 50%;
+}
+
+.w-lg-100 {
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
+}
+
+.w-lg-51 {
+  @media screen and (max-width: 992px) {
+    width: 51%;
+  }
 }
 
 .fs-weight-bold {
@@ -119,6 +144,10 @@ body {
 
 .px-6 {
   padding: 48px 0px;
+}
+
+.py-4 {
+  padding: 0px 32px;
 }
 
 .pt-6 {
@@ -174,6 +203,10 @@ body {
 
 .mr-6 {
   margin-right: 48px;
+}
+
+.d-block {
+  display: block;
 }
 
 @import "./layout/header.scss";
