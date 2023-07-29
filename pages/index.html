@@ -193,20 +193,44 @@
           </p>
           <div class="input-container">
             <span class="input-title mb-1">姓名</span>
-            <div class="input text-gray">陳小明</div>
+            <input type="text" class="input text-gray" placeholder="陳小明" />
           </div>
-          <div class="input-container">
+          <div class="input-container mt-2">
             <span class="input-title mb-1">聯絡電話</span>
-            <div class="input text-gray">0912-345-678</div>
+            <input
+              type="text"
+              class="input text-gray"
+              placeholder="0912-345-678"
+            />
           </div>
-          <div class="input-container">
+          <div class="input-container mt-2">
             <span class="input-title mb-1">電子郵件</span>
-            <div class="input text-gray">example@email.com</div>
+            <input
+              type="text"
+              class="input text-gray"
+              placeholder="example@email.com"
+            />
           </div>
-          <div class="input-container">
+          <div class="input-container mt-2">
             <span class="input-title mb-1">意見反應</span>
-            <div class="input text-gray">請輸入您的意見</div>
+            <textarea
+              class="input text-gray"
+              cols="30"
+              rows="10"
+              placeholder="請輸入您的意見"
+              style="resize: none"
+            ></textarea>
           </div>
+          <div class="mt-2">
+            <input type="checkbox" /><span
+              >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span
+            >
+          </div>
+          <button
+            class="bg-secondary border-0 w-50 submit text-light fs-weight-bold px-2 cursor-pointer submit-container"
+          >
+            確認送出
+          </button>
         </div>
       </div>
     </div>

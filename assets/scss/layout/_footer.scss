@@ -1,0 +1,49 @@
+.footer-menu {
+  display: flex;
+}
+
+.footer-menu-item:not(:last-child) {
+  margin-right: 48px;
+}
+
+.footer-menu-item a {
+  font: normal normal normal 16px/24px Noto Sans TC;
+  color: #ffffff;
+  height: 24px;
+  text-decoration: none;
+}
+
+.footer-logo-item {
+  width: 48px;
+  height: 48px;
+}
+
+.footer-logo-item:not(:last-child) {
+  margin-right: 36px;
+}
+
+.footer-container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content {
+  font: normal normal normal 36px/54px "Noto Sans TC";
+  color: #ffffff;
+}
+
+.footer-content-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-container-2 {
+  border-bottom: 1px solid #ffffff;
+}
+
+.footer-container-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
