@@ -13,24 +13,29 @@ body {
   font-family: "Noto Sans TC", "Roboto", sans-serif;
 }
 
+.container {
+  max-width: 1296px;
+  padding: 0px 32px;
+}
+
 .text-primary {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .text-secondary {
-  color: var(--secondary);
+  color: var(--secondary) !important;
 }
 
 .text-dark {
-  color: var(--black);
+  color: var(--black) !important;
 }
 
 .text-light {
-  color: var(--light);
+  color: var(--light) !important;
 }
 
 .text-gray {
-  color: #707070;
+  color: #707070 !important;
 }
 
 .bg-primary {
@@ -42,171 +47,220 @@ body {
 }
 
 .bg-third {
-  background-color: var(--skin);
+  background-color: var(--skin) !important;
 }
 
 .bg-light {
-  background-color: var(--light);
-}
-
-.container {
-  max-width: 1296px;
-  padding: 0px 32px;
+  background-color: var(--light) !important;
 }
 
 .m-auto {
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 .fs-s {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .fs-ss {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .px-10 {
-  padding: 80px 0px;
+  padding: 80px 0px !important;
 }
 
 .w-25 {
-  width: 25%;
+  width: 25% !important;
+}
+
+.w-33 {
+  width: 33% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.mb-1 {
+  margin-bottom: 8px !important;
+}
+
+.mb-3 {
+  margin-bottom: 24px !important;
+}
+
+.mb-6 {
+  margin-bottom: 48px !important;
+}
+
+.mt-2 {
+  margin-top: 16px !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.fs-weight-bold {
+  font-weight: bold !important;
+}
+
+.border-0 {
+  border: 0px !important;
+}
+
+.px-2 {
+  padding: 16px 0px !important;
+}
+
+.px-4 {
+  padding: 32px 0px !important;
+}
+
+.px-6 {
+  padding: 48px 0px !important;
+}
+
+.py-4 {
+  padding: 0px 32px !important;
+}
+
+.pt-6 {
+  padding-top: 48px !important;
+}
+
+.me-2 {
+  margin-right: 16px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px !important;
+}
+.material-icons.md-24 {
+  font-size: 24px !important;
+}
+.material-icons.md-36 {
+  font-size: 36px !important;
+}
+.material-icons.md-48 {
+  font-size: 48px !important;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54) !important;
+}
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26) !important;
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1) !important;
+}
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.mr-6 {
+  margin-right: 48px !important;
+}
+
+.d-block {
+  display: block !important;
 }
 
 .w-lg-45 {
   @media screen and (max-width: 992px) {
-    width: 45%;
+    width: 45% !important;
   }
-}
-
-.w-33 {
-  width: 33%;
-}
-
-.w-50 {
-  width: 50%;
-}
-
-.mb-1 {
-  margin-bottom: 8px;
-}
-
-.mb-3 {
-  margin-bottom: 24px;
 }
 
 .mb-lg-3 {
   @media screen and (max-width: 992px) {
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
   }
-}
-
-.mb-6 {
-  margin-bottom: 48px;
-}
-
-.mt-2 {
-  margin-top: 16px;
-}
-
-.w-50 {
-  width: 50%;
 }
 
 .w-lg-100 {
   @media screen and (max-width: 992px) {
-    width: 100%;
+    width: 100% !important;
   }
 }
 
 .w-lg-51 {
   @media screen and (max-width: 992px) {
-    width: 51%;
+    width: 51% !important;
   }
 }
 
-.fs-weight-bold {
-  font-weight: bold;
+.mb-md-1 {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 8px !important;
+  }
 }
 
-.border-0 {
-  border: 0px;
+.mb-md-3 {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 24px !important;
+  }
 }
 
-.px-2 {
-  padding: 16px 0px;
+.w-md-100 {
+  @media screen and (max-width: 768px) {
+    width: 100% !important;
+  }
 }
 
-.px-4 {
-  padding: 32px 0px;
+.d-none {
+  display: none !important;
 }
 
-.px-6 {
-  padding: 48px 0px;
+.d-md-none {
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
 }
 
-.py-4 {
-  padding: 0px 32px;
+.d-md-block {
+  @media screen and (max-width: 768px) {
+    display: block !important;
+  }
 }
 
-.pt-6 {
-  padding-top: 48px;
+.d-md-flex {
+  @media screen and (max-width: 768px) {
+    display: flex !important;
+  }
 }
 
-.me-2 {
-  margin-right: 16px;
+.ms-auto {
+  margin-left: auto;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
-/* Rules for sizing the icon. */
-.material-icons.md-18 {
-  font-size: 18px;
-}
-.material-icons.md-24 {
-  font-size: 24px;
-}
-.material-icons.md-36 {
-  font-size: 36px;
-}
-.material-icons.md-48 {
-  font-size: 48px;
-}
-
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark {
-  color: rgba(0, 0, 0, 0.54);
-}
-.material-icons.md-dark.md-inactive {
-  color: rgba(0, 0, 0, 0.26);
-}
-
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light {
-  color: rgba(255, 255, 255, 1);
-}
-.material-icons.md-light.md-inactive {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.d-flex {
-  display: flex;
-  text-decoration: none;
-}
-
-.text-decoration-none {
-  text-decoration: none;
-}
-
-.mr-6 {
-  margin-right: 48px;
-}
-
-.d-block {
-  display: block;
+.px-md-3 {
+  @media screen and (max-width: 768px) {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
 }
 
 @import "./layout/header.scss";

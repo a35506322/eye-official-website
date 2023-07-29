@@ -20,12 +20,20 @@
   font-size: 64px;
   font-weight: bold;
   line-height: 96px;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .home-header-content h3 {
   font-size: 36px;
   line-height: 54px;
   font-family: "Noto Sans TC";
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .shop-btn {
@@ -40,11 +48,19 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .content-container h3 {
   font: normal normal bold 48px/72px Noto Sans TC;
   margin-bottom: 32px;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .icon {
@@ -79,6 +95,9 @@
 
 .detail-card:not(:last-child) {
   margin-right: 24px;
+  @media screen and (max-width: 768px) {
+    margin-right: 0px;
+  }
 }
 
 .detail-card.w-33 h5 {
@@ -121,6 +140,12 @@
       no-repeat center / cover;
     height: 960px;
   }
+
+  @media screen and (max-width: 768px) {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true")
+      no-repeat center / cover;
+    height: 820px;
+  }
 }
 
 .detail-container3 {
@@ -135,6 +160,28 @@
 .detail-card3 h5 {
   text-align: center;
   font: italic normal 900 48px/72px Roboto;
+}
+
+.detail-card3-img-1 {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true")
+    no-repeat center / cover;
+  height: 240px;
+
+  @media screen and (max-width: 768px) {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true")
+      no-repeat center / cover;
+  }
+}
+
+.detail-card3-img-2 {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true")
+    no-repeat center / cover;
+  height: 240px;
+
+  @media screen and (max-width: 768px) {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true")
+      no-repeat center / cover;
+  }
 }
 
 .detail-container4 {
@@ -176,7 +223,7 @@
 }
 
 .form {
-  width: 636px;
+  max-width: 636px;
 }
 
 .form p {

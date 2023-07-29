@@ -16,10 +16,17 @@
 .footer-logo-item {
   width: 48px;
   height: 48px;
+  @media screen and (max-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .footer-logo-item:not(:last-child) {
   margin-right: 36px;
+  @media screen and (max-width: 768px) {
+    margin-right: 8px;
+  }
 }
 
 .footer-container-1 {
@@ -31,6 +38,9 @@
 .footer-content {
   font: normal normal normal 36px/54px "Noto Sans TC";
   color: #ffffff;
+  @media screen and (max-width: 768px) {
+    font: normal normal normal 16px/24px "Noto Sans TC";
+  }
 }
 
 .footer-content-container {
@@ -46,4 +56,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+.footer-container-3-menu {
+  display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
