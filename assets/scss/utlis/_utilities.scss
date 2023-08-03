@@ -69,6 +69,10 @@
   width: 23% !important;
 }
 
+.w-24 {
+  width: 24% !important;
+}
+
 .w-25 {
   width: 25% !important;
 }
@@ -227,6 +231,68 @@
   cursor: pointer !important;
 }
 
+/* iPad related classes */
+.px-lg-0 {
+  @include media-breakpoint-down(lg) {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+.me-lg-0 {
+  @include media-breakpoint-down(lg) {
+    margin-right: 0px !important;
+  }
+}
+
+.mb-lg-3 {
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 24px !important;
+  }
+}
+
+.w-lg-100 {
+  @include media-breakpoint-down(lg) {
+    width: 100% !important;
+  }
+}
+
+.w-lg-45 {
+  @include media-breakpoint-down(lg) {
+    width: 45% !important;
+  }
+}
+
+.w-lg-49 {
+  @include media-breakpoint-down(lg) {
+    width: 49% !important;
+  }
+}
+
+.w-lg-51 {
+  @include media-breakpoint-down(lg) {
+    width: 51% !important;
+  }
+}
+
+.justify-content-lg-center {
+  @include media-breakpoint-down(lg) {
+    justify-content: center !important;
+  }
+}
+
+.flex-lg-wrap {
+  @include media-breakpoint-down(lg) {
+    flex-wrap: wrap !important;
+  }
+}
+
+.justify-content-lg-around {
+  @include media-breakpoint-down(lg) {
+    justify-content: space-around !important;
+  }
+}
+
 /* Mobile related classes */
 .me-md-0 {
   @include media-breakpoint-down(md) {
@@ -314,51 +380,8 @@
   }
 }
 
-/* iPad related classes */
-.me-lg-0 {
-  @include media-breakpoint-down(lg) {
-    margin-right: 0px !important;
-  }
-}
-
-.mb-lg-3 {
-  @include media-breakpoint-down(lg) {
-    margin-bottom: 24px !important;
-  }
-}
-
-.w-lg-100 {
-  @include media-breakpoint-down(lg) {
+.w-md-100 {
+  @include media-breakpoint-down(md) {
     width: 100% !important;
-  }
-}
-
-.w-lg-45 {
-  @include media-breakpoint-down(lg) {
-    width: 45% !important;
-  }
-}
-
-.w-lg-51 {
-  @include media-breakpoint-down(lg) {
-    width: 51% !important;
-  }
-}
-
-.justify-content-lg-center {
-  @include media-breakpoint-down(lg) {
-    justify-content: center !important;
-  }
-}
-
-.flex-lg-wrap {
-  @include media-breakpoint-down(lg) {
-    flex-wrap: wrap !important;
-  }
-}
-
-.justify-content-lg-around {
-  @include media-breakpoint-down(lg) {
-    justify-content: space-around !important;
   }
 }
