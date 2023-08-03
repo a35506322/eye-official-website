@@ -1,26 +1,25 @@
-.home-header {
-  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true")
-    no-repeat center / cover;
+/* home-header */
+.home-header-bg {
+  @include background-image(
+    "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true"
+  );
   height: 787px;
-  @media screen and (max-width: 992px) {
-    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true")
-      no-repeat center / cover;
+  @include media-breakpoint-down(lg) {
+    @include background-image(
+      "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true"
+    );
   }
 }
 
 .home-header-content {
   height: 787px;
-  align-items: end;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .home-header-content h2 {
   font-size: 64px;
   font-weight: bold;
   line-height: 96px;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 24px;
     line-height: 36px;
   }
@@ -30,7 +29,7 @@
   font-size: 36px;
   line-height: 54px;
   font-family: "Noto Sans TC";
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -41,23 +40,10 @@
   padding: 8px 12px;
 }
 
-.content-container {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  @media screen and (max-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-
-.content-container h3 {
+.title-h3 {
   font: normal normal bold 48px/72px Noto Sans TC;
   margin-bottom: 32px;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font-size: 24px;
     line-height: 36px;
   }
@@ -74,59 +60,12 @@
   margin: 16px 0px 4px 0px;
 }
 
-.detail-container {
-  display: flex;
-  justify-content: space-between;
-  @media screen and (max-width: 992px) {
-    flex-wrap: wrap;
-  }
-}
-
-.detail-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .detail-content {
   font: normal normal normal 16px/24px Noto Sans TC;
   text-align: start;
 }
 
-.detail-card:not(:last-child) {
-  margin-right: 24px;
-  @media screen and (max-width: 768px) {
-    margin-right: 0px;
-  }
-}
-
-.detail-card.w-33 h5 {
-  font: italic normal 900 48px/72px Roboto;
-}
-
-.detail-container2 {
-  display: flex;
-  justify-content: space-between;
-  @media screen and (max-width: 992px) {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-
-.detail-card2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.detail-card2:not(:last-child) {
-  margin-right: 24px;
-  @media screen and (max-width: 992px) {
-    margin-right: 0px;
-  }
-}
-
-.detail-card2.w-33 h5 {
+.title-h5 {
   font: italic normal 900 48px/72px Roboto;
 }
 
@@ -135,31 +74,17 @@
     no-repeat center / cover;
   height: 608px;
 
-  @media screen and (max-width: 992px) {
+  @include media-breakpoint-down(lg) {
     background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true")
       no-repeat center / cover;
     height: 960px;
   }
 
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true")
       no-repeat center / cover;
     height: 820px;
   }
-}
-
-.detail-container3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 992px) {
-    flex-wrap: wrap;
-  }
-}
-
-.detail-card3 h5 {
-  text-align: center;
-  font: italic normal 900 48px/72px Roboto;
 }
 
 .detail-card3-img-1 {
@@ -167,7 +92,7 @@
     no-repeat center / cover;
   height: 240px;
 
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true")
       no-repeat center / cover;
   }
@@ -178,48 +103,19 @@
     no-repeat center / cover;
   height: 240px;
 
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true")
       no-repeat center / cover;
   }
 }
-
-.detail-container4 {
-  display: flex;
-  justify-content: space-between;
-  @media screen and (max-width: 992px) {
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-}
-
 .detail-card4 {
   box-shadow: 0px 2px 6px #00000029;
   border: 1px solid #dee2e6;
   border-radius: 4px;
 }
 
-.detail-card4:not(:last-child) {
-  margin-right: 24px;
-  @media screen and (max-width: 992px) {
-    margin-right: 0px;
-  }
-}
-
 .detail-card4-content {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 205px;
-}
-
-.detail-card4-content div p {
-  font: normal normal normal 16px/24px Noto Sans TC;
-}
-
-.detail-card4-content p {
-  font: normal normal normal 16px/24px Noto Sans TC;
 }
 
 .form {
@@ -230,25 +126,11 @@
   font: normal normal normal 20px/30px Noto Sans TC;
 }
 
-.input-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-title {
-  font: normal normal normal 16px/24px Noto Sans TC;
-}
-
 .input {
   border: 1px solid #000000;
   padding: 8px;
 }
 
-.input-container:last-child .input {
-  height: 136px;
-}
-
 .submit-container {
-  display: block;
   margin: 16px auto 0px auto;
 }

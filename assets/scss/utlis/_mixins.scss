@@ -1,0 +1,17 @@
+@mixin media-breakpoint-down($key) {
+  $breakpoint: map-get($breakpoints, $key);
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin logo-replace($background-image) {
+  background: url($background-image) no-repeat center / cover;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin background-image($background-image) {
+  background: url($background-image) no-repeat center / cover;
+}

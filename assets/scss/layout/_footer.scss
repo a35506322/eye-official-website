@@ -1,12 +1,4 @@
-.footer-menu {
-  display: flex;
-}
-
-.footer-menu-item:not(:last-child) {
-  margin-right: 48px;
-}
-
-.footer-menu-item a {
+.footer-menu-item {
   font: normal normal normal 16px/24px "Noto Sans TC";
   color: #ffffff;
   height: 24px;
@@ -16,7 +8,7 @@
 .footer-logo-item {
   width: 48px;
   height: 48px;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     width: 24px;
     height: 24px;
   }
@@ -24,48 +16,19 @@
 
 .footer-logo-item:not(:last-child) {
   margin-right: 36px;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     margin-right: 8px;
   }
-}
-
-.footer-container-1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .footer-content {
   font: normal normal normal 36px/54px "Noto Sans TC";
   color: #ffffff;
-  @media screen and (max-width: 768px) {
+  @include media-breakpoint-down(md) {
     font: normal normal normal 16px/24px "Noto Sans TC";
   }
 }
 
-.footer-content-container {
-  display: flex;
-  align-items: center;
-}
-
 .footer-container-2 {
   border-bottom: 1px solid #ffffff;
-}
-
-.footer-container-3 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-  }
-}
-
-.footer-container-3-menu {
-  display: flex;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
 }
