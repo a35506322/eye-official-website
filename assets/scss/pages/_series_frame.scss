@@ -3,7 +3,7 @@
   width: 33.3%;
 }
 
-.series-frame-menu-container:hover {
+.series-frame-menu-container-active {
   /*
     inset 內陰影
     offset-x 水平位移
@@ -15,28 +15,22 @@
   box-shadow: inset 0 -8px 0 0 $primary;
 }
 
-.series-frame-header-bg-1 {
-  @include background-image(
-    "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true"
-  );
-  height: 296px;
-  @include media-breakpoint-down(lg) {
+@mixin series-frame-header-bg($index) {
+  .series-frame-header-bg-#{$index} {
     @include background-image(
-      "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true"
+      "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-#{$index}.png?raw=true"
     );
+    height: 296px;
+    @include media-breakpoint-down(lg) {
+      @include background-image(
+        "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-#{$index}.png?raw=true"
+      );
+    }
   }
 }
 
-.series-frame-header-bg-2 {
-  @include background-image(
-    "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true"
-  );
-  height: 296px;
-  @include media-breakpoint-down(lg) {
-    @include background-image(
-      "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true"
-    );
-  }
+@for $i from 1 through 4 {
+  @include series-frame-header-bg($i);
 }
 
 .series-frame-menu-item {

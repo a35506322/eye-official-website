@@ -7,33 +7,8 @@
     <title>系列鏡框</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-
-    <div class="container m-auto px-lg-0">
-      <ul class="d-flex">
-        <li class="series-frame-menu-container">
-          <a
-            href="#"
-            class="series-frame-menu-item d-block text-decoration-none text-dark fs-weight-bold text-align-center px-3"
-            >OPTICAL</a
-          >
-        </li>
-        <li class="series-frame-menu-container">
-          <a
-            href="#"
-            class="series-frame-menu-item d-block text-decoration-none text-dark fs-weight-bold text-align-center px-3"
-            >SUNGLASSES</a
-          >
-        </li>
-        <li class="series-frame-menu-container">
-          <a
-            href="#"
-            class="series-frame-menu-item d-block text-decoration-none text-dark fs-weight-bold text-align-center px-3"
-            >FUNCTIONAL</a
-          >
-        </li>
-      </ul>
-    </div>
+    <%- include('./layout/header'); -%> <%-
+    include('./layout/series_frame_menu'); -%>
     <div class="d-flex">
       <div class="w-50 series-frame-header-bg-1"></div>
       <div class="w-50 series-frame-header-bg-2"></div>
@@ -237,29 +212,7 @@
           </div>
         </li>
       </ul>
-      <ul class="d-flex">
-        <li>
-          <a href="#" class="page-item-previous">上一頁</a>
-        </li>
-        <li>
-          <a href="#" class="page-item">1</a>
-        </li>
-        <li>
-          <a href="#" class="page-item">2</a>
-        </li>
-        <li>
-          <a href="#" class="page-item">3</a>
-        </li>
-        <li>
-          <a href="#" class="page-item">4</a>
-        </li>
-        <li>
-          <a href="#" class="page-item">5</a>
-        </li>
-        <li>
-          <a href="#" class="page-item-next">下一頁</a>
-        </li>
-      </ul>
+      <%- include('./layout/series_frame_page'); -%>
     </div>
 
     <%- include('./layout/footer'); -%>
