@@ -203,7 +203,7 @@
   margin-left: auto;
 }
 
-@for $index from 1 through 10 {
+@for $index from 0 through 10 {
   .mb-#{$index} {
     margin-bottom: #{$index * 8px} !important;
   }
@@ -221,7 +221,7 @@
   }
 }
 
-@for $index from 1 through 10 {
+@for $index from 0 through 10 {
   .mt-#{$index} {
     margin-top: #{$index * 8px} !important;
   }
@@ -239,7 +239,7 @@
   }
 }
 
-@for $index from 1 through 10 {
+@for $index from 0 through 10 {
   .ms-#{$index} {
     margin-left: #{$index * 8px} !important;
   }
@@ -257,7 +257,7 @@
   }
 }
 
-@for $index from 1 through 10 {
+@for $index from 0 through 10 {
   .me-#{$index} {
     margin-right: #{$index * 8px} !important;
   }
@@ -275,7 +275,7 @@
   }
 }
 
-@for $index from 1 through 10 {
+@for $index from 0 through 10 {
   .p-#{$index} {
     padding: #{$index * 8px} !important;
   }
@@ -293,7 +293,7 @@
   }
 }
 
-@for $index from 1 through 10 {
+@for $index from 0 through 10 {
   .px-#{$index} {
     padding-top: #{$index * 8px} !important;
     padding-bottom: #{$index * 8px} !important;
@@ -314,7 +314,28 @@
   }
 }
 
-@for $index from 1 through 10 {
+@for $index from 0 through 10 {
+  .py-#{$index} {
+    padding-right: #{$index * 8px} !important;
+    padding-left: #{$index * 8px} !important;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .py-lg-#{$index} {
+      padding-right: #{$index * 8px} !important;
+      padding-left: #{$index * 8px} !important;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .py-md-#{$index} {
+      padding-right: #{$index * 8px} !important;
+      padding-left: #{$index * 8px} !important;
+    }
+  }
+}
+
+@for $index from 0 through 10 {
   .pt-#{$index} {
     padding-top: #{$index * 8px} !important;
   }
