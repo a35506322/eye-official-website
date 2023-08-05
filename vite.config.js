@@ -31,6 +31,7 @@ export default defineConfig(({ command, mode }) => {
     plugins: [
       liveReload([
         "./layout/**/*.ejs",
+        "./components/**/*.ejs",
         "./pages/**/*.ejs",
         "./pages/**/*.html",
       ]),

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>系列鏡框</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%> <%-
+    include('./layout/series_frame_menu'); -%>
+    <div class="d-flex">
+      <div class="w-50 series-frame-header-bg-1"></div>
+      <div class="w-50 series-frame-header-bg-2"></div>
+    </div>
+
+    <div
+      class="container m-auto d-flex flex-column align-items-center mt-10 mb-10"
+    >
+      <!--optical-->
+      <div id="optical" class="d-none">
+        <h3 class="series-frame-h3 fs-weight-bold">Celluloid Combi</h3>
+        <h4 class="series-frame-h4 mb-4">賽璐珞鈦金屬混合鏡框</h4>
+        <ul class="d-flex justify-content-between flex-wrap">
+          <% for(let i=1; i<=12; i++) {%> <%-
+          include('./components/optical_crad', {index:i}) %> <% } %>
+        </ul>
+      </div>
+
+      <!--sunglasses-->
+      <div id="sunglasses" class="d-none">
+        <h3 class="series-frame-h3 fs-weight-bold">Celluloid Combi</h3>
+        <h4 class="series-frame-h4 mb-4">賽璐珞鈦金屬混合鏡框</h4>
+        <ul class="d-flex justify-content-between flex-wrap">
+          <% for(let i=1; i<=6; i++) {%> <%-
+          include('./components/sunglasses_card', {index:i}) %> <% } %>
+        </ul>
+      </div>
+
+      <%- include('./layout/series_frame_page'); -%>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script type="module">
+      document.addEventListener("DOMContentLoaded", function () {
+        const params = new URLSearchParams(window.location.search);
+        const type = params.get("type");
+        document
+          .querySelector(`a[type=${type}]`)
+          .classList.add("series-frame-menu-container-active");
+        document.querySelector(`#${type}`).classList.remove("d-none");
+      });
+    </script>
+  </body>
+</html>
