@@ -294,6 +294,24 @@
 }
 
 @for $index from 0 through 10 {
+  .ps-#{$index} {
+    padding-left: #{$index * 8px} !important;
+  }
+
+  @include media-breakpoint-down(lg) {
+    .ps-lg-#{$index} {
+      padding-left: #{$index * 8px} !important;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .ps-md-#{$index} {
+      padding-left: #{$index * 8px} !important;
+    }
+  }
+}
+
+@for $index from 0 through 10 {
   .px-#{$index} {
     padding-top: #{$index * 8px} !important;
     padding-bottom: #{$index * 8px} !important;
