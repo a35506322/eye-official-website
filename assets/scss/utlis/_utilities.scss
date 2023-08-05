@@ -175,18 +175,21 @@
 }
 
 /* Width related classes */
-
 @for $index from 1 through 100 {
   .w-#{$index} {
     width: #{$index * 1%} !important;
   }
+}
 
+@for $index from 1 through 100 {
   @include media-breakpoint-down(lg) {
     .w-lg-#{$index} {
       width: #{$index * 1%} !important;
     }
   }
+}
 
+@for $index from 1 through 100 {
   @include media-breakpoint-down(md) {
     .w-md-#{$index} {
       width: #{$index * 1%} !important;
@@ -207,13 +210,17 @@
   .mb-#{$index} {
     margin-bottom: #{$index * 8px} !important;
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(lg) {
     .mb-lg-#{$index} {
       margin-bottom: #{$index * 8px} !important;
     }
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(md) {
     .mb-md-#{$index} {
       margin-bottom: #{$index * 8px} !important;
@@ -225,13 +232,17 @@
   .mt-#{$index} {
     margin-top: #{$index * 8px} !important;
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(lg) {
     .mt-lg-#{$index} {
       margin-top: #{$index * 8px} !important;
     }
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(md) {
     .mt-md-#{$index} {
       margin-top: #{$index * 8px} !important;
@@ -243,13 +254,17 @@
   .ms-#{$index} {
     margin-left: #{$index * 8px} !important;
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(lg) {
     .ms-lg-#{$index} {
       margin-left: #{$index * 8px} !important;
     }
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(md) {
     .ms-md-#{$index} {
       margin-left: #{$index * 8px} !important;
@@ -261,13 +276,17 @@
   .me-#{$index} {
     margin-right: #{$index * 8px} !important;
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(lg) {
     .me-lg-#{$index} {
       margin-right: #{$index * 8px} !important;
     }
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(md) {
     .me-md-#{$index} {
       margin-right: #{$index * 8px} !important;
@@ -279,13 +298,17 @@
   .p-#{$index} {
     padding: #{$index * 8px} !important;
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(lg) {
     .p-lg-#{$index} {
       padding: #{$index * 8px} !important;
     }
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(md) {
     .p-md-#{$index} {
       padding: #{$index * 8px} !important;
@@ -297,13 +320,17 @@
   .ps-#{$index} {
     padding-left: #{$index * 8px} !important;
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(lg) {
     .ps-lg-#{$index} {
       padding-left: #{$index * 8px} !important;
     }
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(md) {
     .ps-md-#{$index} {
       padding-left: #{$index * 8px} !important;
@@ -316,14 +343,18 @@
     padding-top: #{$index * 8px} !important;
     padding-bottom: #{$index * 8px} !important;
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(lg) {
     .px-lg-#{$index} {
       padding-top: #{$index * 8px} !important;
       padding-bottom: #{$index * 8px} !important;
     }
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(md) {
     .px-md-#{$index} {
       padding-top: #{$index * 8px} !important;
@@ -337,14 +368,18 @@
     padding-right: #{$index * 8px} !important;
     padding-left: #{$index * 8px} !important;
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(lg) {
     .py-lg-#{$index} {
       padding-right: #{$index * 8px} !important;
       padding-left: #{$index * 8px} !important;
     }
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(md) {
     .py-md-#{$index} {
       padding-right: #{$index * 8px} !important;
@@ -357,13 +392,17 @@
   .pt-#{$index} {
     padding-top: #{$index * 8px} !important;
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(lg) {
     .pt-lg-#{$index} {
       padding-top: #{$index * 8px} !important;
     }
   }
+}
 
+@for $index from 0 through 10 {
   @include media-breakpoint-down(md) {
     .pt-md-#{$index} {
       padding-top: #{$index * 8px} !important;
