@@ -11,13 +11,12 @@
     <div class="container mt-10 mb-10 m-auto">
       <h1 class="store-h1 ps-2 mb-4">門市據點</h1>
       <div class="d-flex align-items-center mb-6">
-        <span class="font-normal-2 me-2">選擇地區</span>
+        <span class="font-normal-2 font-md-normal me-2">選擇地區</span>
         <select class="select-city">
-          <option>台北市</option>
-          <option>台北市中山旗艦店</option>
+          <option selected>台北市</option>
         </select>
       </div>
-      <ul class="d-flex flex-wrap">
+      <ul class="d-flex flex-wrap d-none" name="台北市">
         <% for(let i=1; i<=5; i++) {%> <%- include('./components/store_card',
         {index: i}); %> <% } %>
       </ul>
@@ -26,5 +25,10 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(`ul[name=台北市]`).classList.remove("d-none");
+      });
+    </script>
   </body>
 </html>

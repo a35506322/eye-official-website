@@ -130,6 +130,18 @@
   }
 }
 
+.justify-content-lg-between {
+  @include media-breakpoint-down(lg) {
+    justify-content: space-between !important;
+  }
+}
+
+.d-lg-flex {
+  @include media-breakpoint-down(lg) {
+    display: flex !important;
+  }
+}
+
 /* Mobile related classes */
 
 .d-md-none {
@@ -171,6 +183,12 @@
 .flex-md-wrap {
   @include media-breakpoint-down(md) {
     flex-wrap: wrap !important;
+  }
+}
+
+.font-md-normal {
+  @include media-breakpoint-down(md) {
+    font: normal normal normal 16px/24px Noto Sans TC;
   }
 }
 

@@ -8,6 +8,10 @@
   border: 1px solid #ced4da;
   width: 348px;
   height: 38px;
+
+  @include media-breakpoint-down(md) {
+    width: 276px;
+  }
 }
 
 .store-detail {
