@@ -15,7 +15,7 @@
 }
 
 .store-detail {
-  font: normal normal normal 20px/20px Noto Sans TC;
+  font: normal normal normal 20px/30px Noto Sans TC;
 }
 
 .store-header {
@@ -34,4 +34,21 @@
   background: #000000 0% 0% no-repeat padding-box;
   border: 1px solid #00000020;
   font: normal normal normal 19px/27px Noto Sans TC;
+}
+
+.store_card li {
+  margin-right: 0.5% !important;
+  @include media-breakpoint-down(lg) {
+    margin-right: 0px !important;
+  }
+}
+
+.store_card li:nth-child(3n) {
+  margin-right: 0% !important;
+}
+
+.store_card li:nth-child(even) {
+  @include media-breakpoint-down(lg) {
+    margin-left: auto !important;
+  }
 }
