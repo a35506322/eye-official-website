@@ -43,6 +43,10 @@
   text-align: center !important;
 }
 
+.text-align-right {
+  text-align: right !important;
+}
+
 /* Font related classes */
 .fs-s {
   font-size: 20px !important;
@@ -99,6 +103,14 @@
 
 .align-items-end {
   align-items: flex-end !important;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-end {
+  align-self: flex-end;
 }
 
 .flex-wrap {
@@ -226,6 +238,14 @@
 
 .ms-auto {
   margin-left: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
 }
 
 @for $index from 0 through 10 {

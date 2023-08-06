@@ -15,3 +15,10 @@
 @mixin background-image($background-image) {
   background: url($background-image) no-repeat center / cover;
 }
+
+@mixin multiline-ellipsis($line) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+}

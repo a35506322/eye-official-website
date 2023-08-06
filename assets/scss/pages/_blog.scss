@@ -1,0 +1,35 @@
+.blog-header {
+  font: normal normal normal 32px/48px Noto Sans TC;
+  color: #650300;
+  @include media-breakpoint-down(lg) {
+    font: normal normal normal 24px/36px Noto Sans TC;
+  }
+}
+
+.blog-img {
+  @include background-image(
+    "https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/blog-1.png?raw=true"
+  );
+}
+
+.blog-lable {
+  font: normal normal 500 20px/30px Roboto;
+  @include media-breakpoint-down(lg) {
+    font: normal normal normal 16px/24px Noto Sans TC;
+  }
+}
+
+.blog-content {
+  font: normal normal normal 20px/30px Noto Sans TC;
+  @include multiline-ellipsis(6);
+  @include media-breakpoint-down(lg) {
+    font: normal normal normal 16px/24px Noto Sans TC;
+  }
+}
+
+.more-a {
+  font: normal normal 900 36px/54px Roboto;
+  @include media-breakpoint-down(lg) {
+    font: normal normal normal 16px/24px Noto Sans TC !important;
+  }
+}

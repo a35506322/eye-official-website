@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>部落格</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container mt-10 mb-10 m-auto d-flex flex-column">
+      <h1 class="page-title-h1 ps-2 mb-4">部落格</h1>
+      <ul>
+        <% for(let i=1; i<=5; i++) {%> <%- include('./components/blog_card',
+        {index: i}); %> <% } %>
+      </ul>
+
+      <div class="align-self-center">
+        <%- include('./layout/series_frame_page'); -%>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
