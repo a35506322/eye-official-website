@@ -7,7 +7,7 @@
     <title>部落格</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <%- include('./layout/header'); -%> <%- include('./layout/blog_header'); -%>
     <div class="container mt-10 mb-10 m-auto d-flex flex-column">
       <h1 class="page-title-h1 ps-2 mb-4">部落格</h1>
       <ul>
@@ -15,9 +15,7 @@
         {index: i}); %> <% } %>
       </ul>
 
-      <div class="align-self-center">
-        <%- include('./layout/series_frame_page'); -%>
-      </div>
+      <div class="align-self-center"><%- include('./components/page'); -%></div>
     </div>
 
     <%- include('./layout/footer'); -%>

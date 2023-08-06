@@ -64,6 +64,10 @@
   font: normal normal normal 16px/24px Noto Sans TC;
 }
 
+.font-normal-1-2 {
+  font: normal normal bold 20px/30px Noto Sans TC;
+}
+
 .font-normal-2 {
   font: normal normal normal 24px/36px Noto Sans TC;
 }
@@ -187,6 +191,12 @@
 .justify-content-md-start {
   @include media-breakpoint-down(md) {
     justify-content: flex-start !important;
+  }
+}
+
+.justify-content-md-around {
+  @include media-breakpoint-down(md) {
+    justify-content: space-around !important;
   }
 }
 

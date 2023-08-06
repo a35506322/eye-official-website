@@ -21,9 +21,9 @@
 
 .blog-content {
   font: normal normal normal 20px/30px Noto Sans TC;
-  @include multiline-ellipsis(6);
   @include media-breakpoint-down(lg) {
     font: normal normal normal 16px/24px Noto Sans TC;
+    @include multiline-ellipsis(6);
   }
 }
 
