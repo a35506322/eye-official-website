@@ -1,1 +1,0 @@
-import"./main-9aeed60c.js";document.addEventListener("DOMContentLoaded",function(){const e=new URLSearchParams(window.location.search).get("type");document.querySelector(`a[type=${e}]`).classList.add("series-frame-menu-container-active"),document.querySelector(`#${e}`).classList.remove("d-none")});
