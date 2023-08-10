@@ -72,6 +72,10 @@
   font: normal normal normal 24px/36px Noto Sans TC;
 }
 
+.font-normal-3 {
+  font: normal normal normal 32px/48px Noto Sans TC;
+}
+
 /* Display related classes */
 .d-flex {
   display: flex !important;
@@ -460,4 +464,30 @@
       padding-top: #{$index * 8px} !important;
     }
   }
+}
+
+@for $index from 0 through 10 {
+  .pb-#{$index} {
+    padding-bottom: #{$index * 8px} !important;
+  }
+}
+
+@for $index from 0 through 10 {
+  @include media-breakpoint-down(lg) {
+    .pb-lg-#{$index} {
+      padding-bottom: #{$index * 8px} !important;
+    }
+  }
+}
+
+@for $index from 0 through 10 {
+  @include media-breakpoint-down(md) {
+    .pb-md-#{$index} {
+      padding-bottom: #{$index * 8px} !important;
+    }
+  }
+}
+
+.vertical-align-sub {
+  vertical-align: sub !important;
 }

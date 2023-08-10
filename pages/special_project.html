@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>情人節特別企劃</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%> <%- include('./layout/blog_header'); -%>
+    <div class="container mt-2 m-auto">
+      <ul class="d-flex">
+        <li>
+          <a
+            href="%VITE_SERVER_URL%index.html"
+            class="font-normal text-decoration-none text-dark me-1"
+            >首頁 /
+          </a>
+        </li>
+        <li>
+          <a
+            href="%VITE_SERVER_URL%blog.html"
+            class="font-normal text-decoration-none text-dark me-1"
+          >
+            部落格 /
+          </a>
+        </li>
+        <li>
+          <a href="#" class="font-normal text-decoration-none text-dark me-1"
+            >特別企劃 /
+          </a>
+        </li>
+        <li>
+          <a href="#" class="font-normal text-decoration-none text-primary">
+            情人節特別企劃</a
+          >
+        </li>
+      </ul>
+      <ul class="d-flex">
+        <li class="font-normal-2 text-primary fs-weight-bold me-2">#special</li>
+        <li class="font-normal-2 text-primary fs-weight-bold">#event</li>
+      </ul>
+    </div>
+    <div class="container mb-10 m-auto d-flex">
+      <div class="w-63 me-3 w-md-100 me-md-0">
+        <h1 class="special-project-h1">情人節特別企劃</h1>
+        <h2 class="font-normal-2">2020 Valentine’s Special</h2>
+        <ul>
+          <% for (let index = 1 ;index <= 4 ; index++) { %> <%-
+          include('./components/blog_project', {index: index}); %> <% } %>
+        </ul>
+        <ul class="d-flex pb-2 mb-3" style="border-bottom: 1px solid #707070">
+          <li class="font-normal me-2">Share</li>
+          <li class="me-2">
+            <img
+              style="width: 24px; height: 24px"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-facebook.png?raw=true"
+              alt=""
+            />
+          </li>
+          <li class="me-2">
+            <img
+              style="width: 24px; height: 24px"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-instagram.png?raw=true"
+              alt=""
+            />
+          </li>
+        </ul>
+        <ul
+          class="d-flex justify-content-between justify-md-content-center flex-md-wrap"
+        >
+          <li>
+            <a href="#" class="text-dark text-decoration-none">
+              <span class="material-symbols-outlined vertical-align-sub me-1">
+                arrow_back </span
+              >上一篇：街頭潮人訪問 1</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-dark text-decoration-none">
+              <span class="material-symbols-outlined vertical-align-sub me-1">
+                arrow_forward
+              </span>
+              下一篇：街頭潮人訪問 2</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="pt-1 d-md-none">
+        <div>
+          <span
+            class="material-symbols-outlined vertical-align-sub"
+            style="color: #aa0601; font-size: 38px"
+          >
+            label
+          </span>
+          <span class="font-normal-3 text-primary fs-weight-bold">TAGS</span>
+        </div>
+        <div>
+          <span class="font-normal-2 text-primary fs-weight-bold me-2">
+            #special
+          </span>
+          <span class="font-normal-2 text-primary fs-weight-bold">#sale</span>
+        </div>
+        <div>
+          <span class="font-normal-2 text-primary fs-weight-bold me-2">
+            #new_item
+          </span>
+          <span class="font-normal-2 text-primary fs-weight-bold"
+            >#interview</span
+          >
+        </div>
+        <div>
+          <span class="font-normal-2 text-primary fs-weight-bold me-2">
+            #special
+          </span>
+          <span class="font-normal-2 text-primary fs-weight-bold">#sale</span>
+        </div>
+        <div>
+          <span class="font-normal-2 text-primary fs-weight-bold me-2">
+            #new_item
+          </span>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
